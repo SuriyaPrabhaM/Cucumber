@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="45.10938">
+<testcase classname="To validate Forgetten Password functionality in fb" name="To validate Forgetten Password using invalid mobile number" time="16.275285">
+<failure message="java.lang.IndexOutOfBoundsException: index: 7, Size: 4&#13;&#10;&#9;at io.cucumber.datatable.DataTable.rangeCheck(DataTable.java:295)&#13;&#10;&#9;at io.cucumber.datatable.DataTable.access$800(DataTable.java:43)&#13;&#10;&#9;at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:890)&#13;&#10;&#9;at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:884)&#13;&#10;&#9;at org.steps.ForgettenPwd.to_validate_functionality_using_invalid_mobile_number_and_clich_search_button(ForgettenPwd.java:38)&#13;&#10;&#9;at ✽.To validate functionality using invalid mobile number and clich search button(file:src/test/resources/FeatureFiles/ForgettenPassword.feature:8)&#13;&#10;"><![CDATA[Given user have to be in fb login page......................................passed
+When User have to click Forgetten password link.............................passed
+And To validate functionality using invalid mobile number and clich search button.failed
+Then User have to be in identify the account page...........................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: index: 7, Size: 4
+	at io.cucumber.datatable.DataTable.rangeCheck(DataTable.java:295)
+	at io.cucumber.datatable.DataTable.access$800(DataTable.java:43)
+	at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:890)
+	at io.cucumber.datatable.DataTable$ListView.get(DataTable.java:884)
+	at org.steps.ForgettenPwd.to_validate_functionality_using_invalid_mobile_number_and_clich_search_button(ForgettenPwd.java:38)
+	at ✽.To validate functionality using invalid mobile number and clich search button(file:src/test/resources/FeatureFiles/ForgettenPassword.feature:8)
+]]></failure>
+</testcase>
+<testcase classname="to validate login functionality in facebook" name="To validate login using valid email and invalid password" time="12.126907">
+<system-out><![CDATA[Given user have to be in fb login page......................................passed
+And user have to maximize window............................................passed
+When user have to enter  valid email and invalid password...................passed
+And user have to click the login button.....................................passed
+Then user have to be in password invaild page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="to validate login functionality in facebook" name="To validate login using invalid email and invalid password" time="9.254451">
+<system-out><![CDATA[Given user have to be in fb login page......................................passed
+When user have to enter  invalid email and invalid password.................passed
+And user have to click the login button.....................................passed
+Then user have to be in password invaild page...............................passed
+]]></system-out>
+</testcase>
+<testcase classname="to validate login functionality in facebook" name="To validate login using invalid email and valid password" time="7.452737">
+<failure message="java.lang.IndexOutOfBoundsException: Index: 10, Size: 3&#13;&#10;&#9;at java.util.ArrayList.rangeCheck(Unknown Source)&#13;&#10;&#9;at java.util.ArrayList.get(Unknown Source)&#13;&#10;&#9;at java.util.Collections$UnmodifiableList.get(Unknown Source)&#13;&#10;&#9;at org.steps.LoginSteps.user_have_to_enter_invalid_email_and_valid_password(LoginSteps.java:80)&#13;&#10;&#9;at ✽.user have to enter  invalid email and valid password(file:src/test/resources/FeatureFiles/Login.feature:28)&#13;&#10;"><![CDATA[Given user have to be in fb login page......................................passed
+And user have to maximize window............................................passed
+When user have to enter  invalid email and valid password...................failed
+And user have to click the login button.....................................skipped
+Then user have to be in password invaild page...............................skipped
+
+StackTrace:
+java.lang.IndexOutOfBoundsException: Index: 10, Size: 3
+	at java.util.ArrayList.rangeCheck(Unknown Source)
+	at java.util.ArrayList.get(Unknown Source)
+	at java.util.Collections$UnmodifiableList.get(Unknown Source)
+	at org.steps.LoginSteps.user_have_to_enter_invalid_email_and_valid_password(LoginSteps.java:80)
+	at ✽.user have to enter  invalid email and valid password(file:src/test/resources/FeatureFiles/Login.feature:28)
+]]></failure>
+</testcase>
+</testsuite>
