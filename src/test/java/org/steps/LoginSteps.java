@@ -77,7 +77,7 @@ public class LoginSteps extends BaseClass {
 		
 		List<Map<String,String>> asMaps = d.asMaps();
 		
-		Map<String, String> map = asMaps.get(10);
+		Map<String, String> map = asMaps.get(1);
 		String v1 = map.get("Email");
 		
 		Map<String, String> map2 = asMaps.get(1);
